@@ -33,6 +33,8 @@ jobs:
       
     - name: listing the files
       run:  ls -lrt
+    - name: give permission to gradlew
+      run:  chmod +x gradlew
     - name: Build with Gradle
       run: |
         ./gradlew build
